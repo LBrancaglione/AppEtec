@@ -1,0 +1,45 @@
+<ion-header>
+  <ion-toolbar color="dark">
+    <ion-buttons slot="start">
+      <ion-menu-button></ion-menu-button>
+    </ion-buttons>
+    <ion-card-title color="light">Etec</ion-card-title>
+        <ion-card-subtitle>Comendador Rays </ion-card-subtitle>
+    <ion-title>
+      
+    </ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+    <ion-slides pager="true" [options]="slideOpts" class="imgem-grande">
+        <ion-slide>
+            <img src="http://hbr.co.ke/wp-content/uploads/2017/10/Loading.jpg" routerLink="/noticia01">
+        </ion-slide>
+        <ion-slide>
+            <img src="http://hbr.co.ke/wp-content/uploads/2017/10/Loading.jpg" routerLink="/noticia01">
+        </ion-slide>
+        <ion-slide>
+            <img src="http://hbr.co.ke/wp-content/uploads/2017/10/Loading.jpg" routerLink="/noticia01">
+        </ion-slide>
+      </ion-slides>
+    
+    <h3 class = Distancia>Novidades</h3>
+
+    <ion-item *ngFor = 'let noticia of noticias' >
+        <ion-thumbnail slot="start" (click)= 'enviarDados(noticia)'>
+          <img [src] = 'noticia.imagem'  >
+        </ion-thumbnail>
+        <h6>{{noticia.textoCurto}}</h6>
+      </ion-item>
+    
+
+                                
+                   
+                    
+
+
+
+
+</ion-content>
+

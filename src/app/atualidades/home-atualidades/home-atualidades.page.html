@@ -1,0 +1,50 @@
+<ion-header>
+  <ion-toolbar color="dark">
+    <ion-buttons slot="start">
+      <ion-menu-button></ion-menu-button>
+    </ion-buttons>
+
+    <ion-card-title color="light">Atualidades</ion-card-title>
+    <ion-card-subtitle>o Brasil em relação ao mundo </ion-card-subtitle>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+  
+    <ion-slides pager="true" [options]="slideOpts" class="imgem-grande">
+      <ion-slide>
+        <img src="http://hbr.co.ke/wp-content/uploads/2017/10/Loading.jpg"
+          routerLink="/noticia01">
+      </ion-slide>
+      <ion-slide>
+        <img src="http://hbr.co.ke/wp-content/uploads/2017/10/Loading.jpg"
+          routerLink="/noticia01">
+      </ion-slide>
+      <ion-slide>
+        <img src="http://hbr.co.ke/wp-content/uploads/2017/10/Loading.jpg"
+          routerLink="/noticia01">
+      </ion-slide>
+    </ion-slides>
+    <ion-card>
+    <ion-card-header color="dark">
+      <ion-card-subtitle routerLink="/home-ultimas-noticias" >Ultimas Notícias</ion-card-subtitle>
+    </ion-card-header>
+  
+
+  
+    <ion-card-header color="dark">
+      <ion-card-subtitle routerLink="/politica-home">Politica</ion-card-subtitle>
+    </ion-card-header>
+  
+  
+  
+    <ion-card-header color="dark">
+      <ion-card-subtitle routerLink="/economiahome">Economia</ion-card-subtitle>
+    </ion-card-header>
+  
+
+  
+    <ion-card-header color="dark">
+      <ion-card-subtitle routerLink="/relacoesinternacionais-home">Relaçoes internacionais</ion-card-subtitle>
+    </ion-card-header>
+  </ion-card>
